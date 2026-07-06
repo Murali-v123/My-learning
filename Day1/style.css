@@ -1,0 +1,11 @@
+body{
+background:red;
+color:white;
+}
+
+table{
+    border:2px solid black;
+}
+td{
+        border:2px solid black;
+}
