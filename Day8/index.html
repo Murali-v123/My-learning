@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector-Types</title>
+    <style>
+        /* class selector */
+        .hello{
+            background-color: yellow;
+            color: red;
+        }
+        /* id selector */
+        #world{
+            background-color: red;
+            color: yellow;
+        }
+        /* child selector */
+        div > p{
+            color: aqua;
+        } 
+        /* decendent-selector */
+        div p{
+            background-color: blue;
+        }
+        /* universal-selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo-selector */
+        a:hover{
+            color: aqua;
+            background-color: chocolate;
+        }
+        a:visited{
+            color: yellow;
+            background-color: black;
+        }
+        a:active{
+            background-color: darkorchid;
+        }
+        a:link{
+            color: green;
+        }
+        p:first-child{
+            color: crimson;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    pseudo-selector
+    <main>
+        <p>I am one</p>
+        <p>I am 2</p>
+    </main>
+    
+    class-selector & child-selector
+    <div class="hello">
+        paragraph under div 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo.</p>
+    </div>
+
+    id-selector
+    <br>
+    <span id="world">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </span>
+    <br>
+
+    decendent-selector
+    <div>
+        <span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, sint.</p>
+        </span>
+    </div>
+
+    pseudo-selector
+    <a href="https://www.google.com">go to google</a>
+    <a href="https://www.facebook.com">go to facebook</a>
+</body>
+</html>
