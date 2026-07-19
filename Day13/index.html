@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        .hello{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+        .light{
+            color:black ;
+        }
+        #world{
+            background-color: red;
+        }
+        p{
+            background-color: brown;
+            color: aquamarine;
+            font-style: italic !important;
+        }
+
+        body{
+            color: orange;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div>
+        <p id="world" style="color: aqua; background-color: yellow;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, alias!</p>
+    </div>
+
+    <span class="hello red light">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe dolorem adipisci nemo.
+    </span>
+    
+    <ul>
+        <li>Universal-selector has-0Points</li>
+        <li>element-selector and pseduo selector has-1 Point</li>
+        <li>class,attribute-and pseudo-selector has-10Points</li>
+        <li>Id-selector has-100Points</li>
+        <li>Inline-selector has-1000Points</li>
+    </ul>
+    <p style="color: white; background-color: orangered;">when two or more selectors are specified then the last mentioed selectors effects will be applied and these effect can be changed with the key-word,important,ex:now i have metioned imp keyword above so it has changed its style to italic</p>
+    <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam laborum quo quas.</p>
+
+</body>
+</html>
