@@ -6,8 +6,9 @@
     <title>css display property</title>
     <style>
         *{
-            /* margin: 0;
-            padding: 0; */
+            margin: 0;
+            /* padding: 0; */
+            
         }
         .box{
             display: inline;
@@ -22,18 +23,25 @@
             border: 3px solid orange;
             /* margin: 20px;
             padding: 25px; */
+            display: inline-flex; 
+            justify-content: center;
+        }
+        .container{
+            /* display: none; */
+            border: 2px solid orange;
+            visibility: hidden;/*The text will not appear in the browser, but it will take the same space as it,its text was taking; */
         }
     </style>
 </head>
 <body>
+        <!-- link is to know more css property-->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display -->
     <div class="box">
         Lorem ipsum dolor
-        
     </div>
 
     <div class="box1">
         Lorem ipsum dolor sit amet.
-        
     </div>
 
     <span class="container">
