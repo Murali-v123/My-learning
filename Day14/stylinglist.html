@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling-Lists</title>
+    <style>
+        nav ul li{
+            list-style:devanagari;
+            /* display: flex; */
+            background-color: red;
+            color: yellow;
+            border: 2px solid blue;
+            list-style-position: inside;
+            list-style: none;
+            /* numers or disc for this list will not apply
+            i.e *home will be as home * or dot will be removed */
+        }
+        /* decendent selector */
+        span ul li{
+            background-color: blue;
+            list-style-position: inside;
+            border: 2px solid red;
+            color: wheat;
+            list-style-type:none inside url("https://user-images.githubusercontent.com/6876788/96633009-d1818000-1318-11eb-9f1d-7f914f4ccb16.gif");
+            list-style-image:url("https://user-images.githubusercontent.com/6876788/96633009-d1818000-1318-11eb-9f1d-7f914f4ccb16.gif");
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <span>
+        <ul>
+            <li>hello</li>
+            <li>WORLD</li>
+            <li>python</li>
+        </ul>
+    </span>
+</body>
+</html>
