@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postions</title>
+    <style>
+        .bigbox{
+            margin: 0;
+            padding: 0; 
+            border: 2px solid black;
+            width: 82vw;
+        }
+        .box{
+            width: 80vw;
+            height: 350px;
+            border: 2px solid black;
+            padding: 3px;
+            margin: 3px;
+        }
+        .box1{
+            background-color: blue;
+            position: sticky;/*can act as navbar at fixed position*/
+            z-index: 1;
+            /* left:10px; */
+            top: 0px;
+            left: 13px;
+            margin: 0;
+            padding: 0;
+            width: 99%;
+            height: 119px;
+        }
+        .box2{
+            background-color: aqua;
+            position: fixed;/*fixes positon of a box*/
+            /* top:0px; */
+            bottom: 20px;
+            right: 15px;
+        }
+        .box3{
+             background-color: red;
+           position: absolute;   /*absolute removes any indentation about top or bottom*/
+             /* z-index: 1; */
+             /* top: ; */
+             height: 58vh;
+             overflow: scroll hidden;
+        }
+        .box4{
+             background-color: rgb(24, 204, 105);
+             position: relative;
+             top: 150px;
+             overflow-x: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>
