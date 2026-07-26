@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+    <style>
+        :root{
+            --color:red;
+            --border:2px solid black;
+            --padd:0px;
+            --height:80vh;
+            --width:60vw;
+            --over:scroll;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            background-color: aqua;
+            display: flex;
+            /* padding: 20px;
+            margin: 10px; */
+            border: var(--border);
+            color: var(--color);
+            
+        }
+        ul li{
+            list-style: none
+        }
+        .text2{
+            position:relative;
+            top:5px;
+            left: 20vw;
+            background-color: blueviolet;
+            color: var(--color);
+            height: var(--height);
+            width: var(--width);
+            overflow-x: var(--over);
+        }
+        .foot{
+            color: brown;
+            background-color: darkcyan;
+            overflow-y: var(--over);
+            width: var(--width);
+            position: relative;
+            top: 10px;
+            left: 21vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="text1">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="text2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos omnis est, alias expedita necessitatibus deleniti vel ratione suscipit quis iusto dolore minima distinctio maxime nam ab doloremque itaque porro voluptatem earum eligendi ex nisi? Nesciunt, ad sequi animi officiis corporis nobis natus non eligendi facere!
+    </div>
+
+    <div class="foot">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, eos voluptas aperiam dignissimos omnis quidem quia, assumenda deserunt quam sed eum, fugit obcaecati!</p>
+    </div>
+</body>
+</html>
