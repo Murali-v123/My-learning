@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css media query's</title>
+    <style>
+        body{
+            background-color: rgb(35, 104, 104);
+        }
+        @media screen and (orientation: portrait) {
+            body{
+                background-color: rgb(135, 226, 226) !important;
+            }
+        }
+        @media only screen and  (max-width:300px) {
+            body{
+                background-color:blue;
+            }
+            .box{
+                background-color: chocolate;
+                flex-direction: column;
+            }
+            .box1{
+                background-color: darkgoldenrod !important;
+            }
+            p{
+                color: wheat;
+            }
+        }
+        .imgg{
+            border-radius: 5px;
+            width: 80;
+            height: 100%;
+        }
+        .box{
+            display: flex;
+            
+        }
+        img{
+            width: 150px;
+        }
+        .box1{
+            width: 150px;
+            height: 80vh;
+            margin: 5px;
+            padding: 5px;
+            background-color: black;
+            /* display: flex;
+            flex-direction: row; */
+        }
+        p{
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+    </div>
+    <div class="box">
+        <div class="box1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOYvQs_n_fIqfduy9oMhjkC2OQ5bZf2kUroJVvn8xq7dpvtyk42QMdGhLd&s=10" alt="" style="width: 150px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, illum aperiam. Laudantium fuga provident, aliquid consectetur accusantium minus ut pariatur vitae quae reprehenderit?</p>
+        </div>
+        <div class="box1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgI3fF6_ebdidZr1lnTEvKusZLVuw2ZKsrhm_Xtxn6ZdQlOo9PBRq1v2VW&s=10" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur dolore beatae aspernatur magni maiores. Velit sit asperiores modi doloremque. Et, aliquid quam!</p>
+        </div>
+        <div class="box1">
+            <img src="https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_640.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ullam, veritatis tempora sapiente, tenetur provident praesentium beatae neque libero ratione, quasi quos odio!</p>
+        </div>
+        
+    </div>
+    <div>
+            <img style="width: 500px;" class="imgg" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Zuz3haRHrSz0f3bnMlUTGa14Qc7Z5LLQ3-l04P98hv9CMXQU" alt="">
+        </div>
+</body>
+</html>
