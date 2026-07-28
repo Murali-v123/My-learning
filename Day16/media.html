@@ -6,7 +6,15 @@
     <title>css media query's</title>
     <style>
         body{
-            background-color: rgb(35, 104, 104);
+            /* background-color: rgb(35, 104, 104) !important; */
+            margin: 0;
+            padding: 100px 580px 150px 300px;
+        }
+        @media screen and (min-width:400px) {
+            body{
+                background-color: darkmagenta;
+            }
+            
         }
         @media screen and (orientation: portrait) {
             body{
@@ -39,6 +47,7 @@
         }
         img{
             width: 150px;
+            border-radius: 5px;
         }
         .box1{
             width: 150px;
@@ -48,6 +57,7 @@
             background-color: black;
             /* display: flex;
             flex-direction: row; */
+            border-radius: 10px;
         }
         p{
             color: cornflowerblue;
@@ -73,7 +83,7 @@
         
     </div>
     <div>
-            <img style="width: 500px;" class="imgg" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Zuz3haRHrSz0f3bnMlUTGa14Qc7Z5LLQ3-l04P98hv9CMXQU" alt="">
+            <img style="width: 500px; padding-left: 6px; border-radius: 15px;" class="imgg" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Zuz3haRHrSz0f3bnMlUTGa14Qc7Z5LLQ3-l04P98hv9CMXQU" alt="">
         </div>
 </body>
 </html>
