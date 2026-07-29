@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+        .box::first-line{
+            background-color: blue;
+        }
+        .box::first-letter{
+            color: brown;
+            font-size: 30px;
+            background-color: black;
+        }
+        .container *{
+            border: 2px solid red;
+            padding: 20px 5px 30px 5px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        [data-color="sec"]{
+            color: purple;
+            background-color: aliceblue;
+        }
+        /* .box:nth-child(odd){
+            margin: 50px;
+        }
+        .box:nth-child(even){
+            margin: 50px;
+        }  */
+
+        .box:nth-last-child(1){
+            padding: 20px 50px ;
+        }
+
+        .container::before{
+            content: "Hello world";
+        }
+        .container::after{
+            content: "Bye world";
+        }
+
+        ::selection{
+            background-color: red;
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Lorem, ipsum dolor.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quidem animi recusandae eligendi veritatis? Repellat temporibus quisquam unde dolorum fuga repellendus ut eaque culpa dicta nulla itaque laudantium sit, consectetur consequatur officiis ullam officia asperiores. </div>
+        <div data-color="sec" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repudiandae placeat, dolores ut temporibus necessitatibus repellat fugit accusantium, accusamus iure possimus commodi, exercitationem eos laboriosam modi blanditiis. Accusantium maxime debitis aspernatur, aut dolores repudiandae!</div>
+    </div>
+</body>
+</html>
