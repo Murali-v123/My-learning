@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Grid</title>
+    <style>
+        .container{
+            display: grid;
+            width: 80vw;
+            border: 2px solid blueviolet;
+            /* justify-content: center; */
+            /* justify-items: center; */
+            /* grid-template-areas: "nav nav nav"
+                                  "side article article"
+                                  "side article article"
+                                  "footer footer footer"; */
+            /* grid-template-columns: [col1] 200px [col2] 102px;
+            border: 2px solid #0000ff;
+            grid-template-rows: 100px 100px 140px; 
+            margin: 20px;
+            border-radius: 20px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(2,2fr);
+            grid-template-rows: repeat(3,1fr);
+            /* grid-template-rows: 1fr 2fr 1fr; */
+            
+            gap: 50px;
+            /* column-gap: 10px;
+            row-gap: 20px; */
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 50px;
+            border-radius: 5px;
+            background-color: red;
+            width: 55px;
+            /* justify-items: center;
+            justify-content: center; */
+             /* margin: 20px; */ 
+        }
+        
+        /* .item1{
+            grid-area: nav;
+        } */
+        
+         /* .item4{
+            grid-area: article;
+        } */
+
+        /* .item5{
+            grid-row: col1/col2; 
+            grid-column: 1/2; 
+            grid-row-start: 1;
+            grid-column-end: 2; 
+            grid-area: side;
+        }  */
+
+        /* .item5{
+            grid-area: footer;
+        } */
+
+        /* .item6{
+            grid-area: footer;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box item1">1</div>
+        <div class="box item2">2</div>
+        <div class="box item3">3</div>
+        <div class="box item4">4</div>
+        <div class="box item5">5</div>
+        <div class="box item6">6</div>
+    </div>
+</body>
+</html>
