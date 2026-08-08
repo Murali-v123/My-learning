@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Challenge_about-grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            /* border: 2px solid blue; */
+            background-color:rgb(154, 236, 236) ;
+            justify-content: space-around;
+            align-items: flex-start; /* Vertically centers the logo and list in the header */
+            /* border-radius: 5px; */
+        }
+
+        .logo{
+            background-color: black;
+            color: yellow;
+            width: 35px;
+            font-weight: bold;
+            /* Removed the 55px restriction so text doesn't wrap */
+            padding: 5px 15px; 
+            margin: 15px;
+            display: flex; /* Aligns UE and Ultraedit side-by-side */
+            align-items: center; 
+            gap: 10px; /* Adds space between UE and Ultraedit */
+            font-size: xx-large;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        
+        .bx {
+            color: white; /* Changed to white so it is readable on the black background */
+            font-size: large; /* Adjust sizing for the icon text if needed */
+            color: black;
+            margin-left: 10px;
+        }
+
+        .list {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+        .list li{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            cursor: pointer;
+        }
+
+        .list li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .english{
+            border: 2px solid rgb(155, 155, 197);
+            background-color:rgb(147, 221, 221) ;
+            width: 80px;
+            height:20px ;
+            border-radius: 20px;
+            padding: 20px;
+            align-items: center;
+            justify-content:center ;
+            display: inline;
+        }
+
+        .maincontent{
+            display: grid;
+            grid-template-columns: 200px 200px 150px;
+            grid-template-rows: 150px 150px 150px;
+            background-color: cadetblue;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 8px; */
+        }
+
+        .foot{
+            background-color: black;
+            color: wheat;
+            height: 10vh;
+            /* width: 80vw; */
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* border-radius: 10px; */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    UE 
+                    <!-- Fixed misspelled sapn tag and removed invalid grid properties -->
+                <span class="bx" style="display: inline;">Ultraedit</span>
+            </div>
+            <ul class="list">
+            <li> <a href="about:blank" target="_blank">Products</a>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"></path></svg></li>
+
+            <li>Pricing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"></path></svg></li>
+
+            <li>Resource <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"></path></svg></li>
+
+            <li>About <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"></path></svg></li>
+        </ul>
+    </div>
+</header>
+</nav>
+    <div class="maincontent">
+        <div class="english">english <a href="./1mb.exe" style="color:red; text-decoration: none;">download</a></div>
+        <div class="english">telugu <a href="./1mb.exe" style="color:red; text-decoration: none;">download</a></div>
+        <div class="english">kannada <a href="./1mb.exe" style="color:red; text-decoration: none;">download</a></div>
+        <div class="english">tamil <a href="./1mb.exe" style="color:red; text-decoration: none;">download</a></div>
+        <div class="english">hindi <a href="./1mb.exe" style="color:red; text-decoration: none;">download</a></div>
+        <div class="english">malayalam <a href="./1mb.exe" style="color:red; text-decoration: none;">download</a></div>
+        <div class="english">spain <a href="./1mb.exe" style="color:red; text-decoration: none;">download</a></div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            All right reserved 2023-25
+        </div>
+    </footer>
+</body>
+</html>
