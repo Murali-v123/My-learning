@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animatoins</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 80vh;
+            background-color: blueviolet;
+            /* margin: 10px;
+            padding: 20px; */
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            color: wheat;
+            margin: 20px;
+            padding: 20px;
+           /* animation-name: editor;
+           animation-duration: 3s;
+           animation-iteration-count: infinite;
+           animation-timing-function: cubic-bezier(0, 0.07, 0, 1.38);
+           animation-fill-mode: both;
+           animation-direction: alternate-reverse; */
+           /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+           animation: editor 2s ease-in-out 1s infinite alternate-reverse forwards,rotate 5s ease infinite;
+        }
+        @keyframes editor{
+            from{
+                background-color: yellow
+            }
+            to{
+                background-color: black;
+                transform: translateX(200px);
+                transform: translateY(200px);
+            }
+        }
+
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(150deg);
+            }
+            50%{
+                transform: rotate(300deg);
+            }
+            75%{
+                transform: rotate(450deg);
+            }
+            100%{
+                transform: rotate(600deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
