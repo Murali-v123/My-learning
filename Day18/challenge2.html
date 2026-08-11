@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 80vh;
+            background-color: aqua;
+            display: flex;
+            /* display:; */
+            /* justify-content: space-around; */
+            align-items: end;
+        }
+
+        .box{
+            background-color: red;
+            border-radius: 50px;
+            width:50px;
+            height:50px;
+            /* position: sticky; */
+            position: absolute;
+            /* bottom: 0; */
+            /* left: 0; */
+            display: flex;
+            align-items: center;
+            /* position: fixed; */
+            /* animation: translate 3s ease-in-out 1s infinite alternate-reverse; */
+            /* animation: translate 5s ease-out infinite,translate1 5s ease-out infinite alternate; */
+            animation: translate 5s linear 1s infinite ;
+        }
+
+        /* @keyframes translate {
+            0% { transform: translateY(0px); } 
+            /* 20% { transform: translate(-20vh, -20vh); } 
+            40% { transform: translate(-30vh, -30vh); }  
+            60% { transform: translateY(-250px); } 
+            /* 80% { transform: translate(-80vh, -80vh); }  
+            100% { transform: translateY(0px); } 
+        } */
+
+        /* @keyframes translate {
+            0% { 
+               left: 0%;
+               bottom: 0%; 
+            }
+            10% { 
+               left: 5%;
+               bottom: 60%; 
+            }
+            20% { 
+               left: 15%;
+               bottom: 0%; 
+            }
+            30% { 
+               left: 25%;
+               bottom: 60%; 
+            }
+            40% { 
+               left: 35%;
+               bottom: 0%; 
+            }
+            50% { 
+               left: 45%;
+               bottom: 60%; 
+            }
+            60% { 
+               left: 55%;
+               bottom: 0%; 
+            }
+            70% { 
+               left: 65%;
+               bottom: 60%; 
+            }
+            80% { 
+               left: 75%;
+               bottom: 0%; 
+            }
+            90% { 
+               left: 85%;
+               bottom: 60%; 
+            }
+             100% { 
+               left: 95%;
+               bottom: 0%; 
+            }
+        } */
+         @keyframes translate {
+            0% { 
+               transform: translatex(0px) translateY(0px); 
+            }
+            20% { 
+               transform: translatex(15vw) translateY(-60vh); 
+            }
+            40% { 
+               transform: translatex(30vw) translateY(0vh); 
+            }
+            60% { 
+               transform: translatex(45vw) translateY(-60vh); 
+            }
+            80% { 
+               transform: translatex(60vw) translateY(0vh); 
+            }
+            90% { 
+               transform: translatex(75vw) translateY(-60vh); 
+            }
+            100% { 
+               transform: translatex(80vw) translateY(0vh); 
+            }
+      }
+
+            /* @keyframes translate{
+               from{
+                  left:0%;
+               }
+               to{
+                  left:100%;
+               }
+            }
+            @keyframes translate1 {
+               from{
+                  bottom: 0%;
+               }
+               to{
+                  bottom:100%;
+               }
+            } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
