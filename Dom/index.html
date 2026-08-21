@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM(Documnent object model)</title>
+    <style>
+        .box {
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid blue;
+            background-color: red;
+            width: 30vw;
+            height: 20vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+    <p>
+        to access box under container
+    <ul>
+        <li>document.body.firstElementChild.firstElementChild</li>
+        <li>document.body.firstElementChild.lastElementChild</li>
+    </ul>
+    </p>
+    <p>
+    document.body.firstElementChild.nextElementSibling
+    <p>​ to access box under container ​</p>​
+    document.body.nextElementSibling
+    null
+    document.body.firstElementChild.previousElementSibling
+    null
+    document.body.firstElementChild.previousElementSibling
+    null
+    let cat=document.body.firstElementChild
+    undefined
+    cat
+    <div class=​"container">​…​</div>​
+    cat.lastElementChild
+    <div class=​"box">​box5​</div>​
+    cat.previousSibling
+    #text
+    cat.previousElementSibling</p>
+    <script src="./index.js"></script>
+</body>
+
+</html>
