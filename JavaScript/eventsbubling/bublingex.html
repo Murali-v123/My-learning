@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubling example </title>
+    <style>
+        .childsec {
+            padding: 15px;
+            margin: 15px;
+            background-color: antiquewhite;
+            border: 2px solid red;
+        }
+
+        .container {
+            padding: 25px;
+            /* margin: 5px; */
+            width: 97 vw;
+            background-color: rgb(216, 122, 0);
+            border: 2px solid rgb(212, 209, 209);
+        }
+
+        .childdiv {
+            padding: 15px;
+            margin: 15px;
+            background-color: yellowgreen;
+            border: 2px solid brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childdiv">
+            <div class="childsec">hey there i am under section tag</div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="childdiv">
+            <div class="childsec">hey there i am under section tag</div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="childdiv">
+            <div class="childsec">hey there i am under section tag</div>
+        </section>
+    </div>
+
+    <h1>Hello world</h1>
+
+    <script src="https://jquery.com"></script>
+    <script>
+        // $(document).on("keydown", (e) => {
+        //     $("h1").text(e.key);
+        // });
+        document.addEventListener("keydown", (e) => {
+            document.querySelectorAll("h1").forEach((h1) => {
+                h1.textContent = e.key
+            });
+        });
+
+        // $("document").keypress((e) => {
+        //     $("h1").text(e.key)
+        // })
+        // document.querySelector(".childsec").addEventListener("click", () => {
+        //     document.querySelector(".childsec").innerHTML = "<b>Hey there you have clicked me</b>"
+        // })
+
+        // document.querySelector(".childsec").addEventListener("click", (e) => {
+        //     e.stopPropagation()
+        //     alert("Hey You clicked section's child div")
+        // })
+        const childsecs = document.querySelectorAll(".childsec");
+        const childdivs = document.querySelectorAll(".childdiv");
+        const containers = document.querySelectorAll(".container");
+
+        childsecs.forEach(el => {
+            el.addEventListener("click", (e) => {
+                e.stopPropagation()
+                alert("Hey You clicked section's child div");
+            })
+        })
+        childdivs.forEach(el => {
+            el.addEventListener("click", (e) => {
+                e.stopPropagation()
+                alert("Hey You clicked div's child i.e section tag");
+            })
+        })
+        containers.forEach(el => {
+            el.addEventListener("click", (e) => {
+                e.stopPropagation()
+                alert("Hey You clicked div");
+            })
+        })
+        containers.forEach(el => {
+            el.addEventListener("contextmenu", (e) => {
+                e.stopPropagation()
+                document.querySelectorAll(".childsec").forEach(ch => {
+                    ch.innerHTML = "<b>Hey there i have changed you</b>"
+                })
+            })
+        })
+
+
+        // // document.querySelector(".childdiv").addEventListener("click", () => {
+        // //     e.stopPropagation()
+        // //     alert("Hey You clicked section  tag")
+        // // })
+        // // document.querySelector(".container").addEventListener("click", () => {
+        // //     alert("Hey You clicked div tag")
+        // // })
+
+        function getrandomnum() {
+            let val1 = Math.ceil(0 + Math.random() * 235)
+            let val2 = Math.ceil(0 + Math.random() * 235)
+            let val3 = Math.ceil(0 + Math.random() * 235)
+
+            return `rgb(${val1},${val2},${val3})`
+        }
+
+        // to apply effect for all divs
+        setInterval(() => {
+            childsecs.forEach(el => el.style.background = getrandomnum())
+            childdivs.forEach(el => el.style.background = getrandomnum())
+            containers.forEach(el => el.style.background = getrandomnum())
+        }, 1000);
+        setInterval(() => {
+            childsecs.forEach(el => el.style.border = `2px solid ${getrandomnum()}`,)
+            childdivs.forEach(el => el.style.border = `2px solid ${getrandomnum()}`)
+            containers.forEach(el => el.style.border = `2px solid ${getrandomnum()}`)
+        }, 100);
+        // setInterval(() => {
+        //     document.querySelector(".childsec").style.border = `2px solid ${getrandomnum()}`
+        // }, 100);
+        // setInterval(() => {
+        //     document.querySelector(".container").style.background = getrandomnum()
+        // }, 1000);
+        // setInterval(() => {
+        //     document.querySelector(".container").style.border = `2px solid ${getrandomnum()}`
+        // }, 100);
+        // setInterval(() => {
+        //     document.querySelector(".childdiv").style.background = getrandomnum()
+        // }, 1000);
+        // setInterval(() => {
+        //     document.querySelector(".childdiv").style.border = `2px solid ${getrandomnum()}`
+        // }, 100);
+    </script>
+</body>
+
+</html>
