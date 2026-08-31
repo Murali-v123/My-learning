@@ -5,7 +5,7 @@ console.log("sentence 2");
 
 setTimeout(() => {
     console.log("Under timeout function");
-}, 2000);
+}, 1);
 
 
 const fn = () => { 
@@ -19,8 +19,8 @@ const callback = (arg,fn) =>{
 const loadscript = (src,callback) =>{
     let sc=document.createElement("script")
     sc.src=src
-    // sc.onload=callback("hello") or
-    sc.onload=()=>callback("sucessful",fn) 
+    sc.onload=callback("hello",fn) //or
+    // sc.onload=()=>callback("sucessful",fn) 
     document.head.append(sc)
 }
 
