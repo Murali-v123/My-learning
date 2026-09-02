@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches,closest and contains</title>
+    <style>
+        .bigbox{
+            background-color: red;
+            padding: 20px 15px;
+        }
+        .smallbox1{
+            background-color: yellow;
+            padding: 20px 10px;
+        }
+
+        .smallbox2{
+            background-color: yellowgreen;
+            padding: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1" id="id1">Div box 1 <span id="sp1">hello</span></div>
+        <div class="box2" id="id2">Div box 2</div>
+    </div>
+
+    <div class="bigbox">wassup
+        <div class="smallbox1">hello
+             <div class="smallbox2">world</div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        function randomfun() {
+            let a1=Math.ceil(0+Math.random()*235)
+            let a2=Math.ceil(0+Math.random()*235)
+            let a3=Math.ceil(0+Math.random()*235)
+            return `rgb(${a1},${a2},${a3})`
+        }
+
+        setInterval(() => {
+            document.querySelector(".bigbox").style.backgroundColor=randomfun()
+        }, 100);
+        setInterval(() => {
+            document.querySelector(".smallbox1").style.backgroundColor=randomfun()
+        }, 100);
+        setInterval(() => {
+            document.querySelector(".smallbox1").style.backgroundColor=randomfun()
+        }, 100);
+    </script>
+</body>
+</html>
